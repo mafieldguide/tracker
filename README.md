@@ -43,4 +43,4 @@ Workflow labels only: `new-question`, `correction`, `evidence`, `needs-review`, 
 
 ## Other ways to reach the maintainer
 
-For anything that doesn't fit an issue, email [mafieldguide@gmail.com](mailto:mafieldguide@gmail.com).
+For anything that doesn't fit an issue, email [mafieldguide@gmail.com](mailto:mafieldguide@gmail.com) or message [@mafieldguide on X](https://x.com/mafieldguide).
