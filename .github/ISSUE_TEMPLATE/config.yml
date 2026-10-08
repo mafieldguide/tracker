@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Browse the FAQ
+    url: https://mafieldguide.com
+    about: Check whether your question is already answered on MA Field Guide.
+  - name: Math Academy support
+    url: https://www.mathacademy.com
+    about: Billing, login, account access, privacy or security incidents, and account-specific bugs must go to Math Academy directly. This tracker can't help with them.

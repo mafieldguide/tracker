@@ -1,0 +1,44 @@
+name: New question
+description: Suggest a question for the community FAQ
+title: "New question: "
+labels: ["new-question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a question. This is an **unofficial community FAQ**, not Math Academy support. Account-specific, billing, login, or privacy/security matters must go to Math Academy directly.
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: Phrase it the way a user would ask it.
+    validations:
+      required: true
+  - type: textarea
+    id: why_useful
+    attributes:
+      label: Why might this be useful to others?
+    validations:
+      required: false
+  - type: input
+    id: source_url
+    attributes:
+      label: Source or context link (optional)
+      description: A link to where the question or an answer came up, if you have one.
+      placeholder: https://
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context (optional)
+      description: Please don't paste private information or unrelated conversations.
+    validations:
+      required: false
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Acknowledgements
+      options:
+        - label: I understand this is not official Math Academy support and the maintainer decides what is published.
+          required: true

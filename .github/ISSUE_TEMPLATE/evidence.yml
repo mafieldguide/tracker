@@ -1,0 +1,65 @@
+name: Evidence
+description: Submit a source relevant to an existing or possible FAQ
+title: "Evidence: "
+labels: ["evidence"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Submissions are reviewed, not automatically accepted. Please read [the submission policy](https://github.com/mafieldguide/tracker/blob/main/SUBMISSION_POLICY.md) first.
+  - type: input
+    id: faq_url
+    attributes:
+      label: FAQ page URL, slug, or question
+    validations:
+      required: true
+  - type: input
+    id: source_url
+    attributes:
+      label: Source URL
+      description: Required whenever a link exists. If there is truly none, write "none" and explain below.
+      placeholder: https://
+    validations:
+      required: true
+  - type: dropdown
+    id: source_type
+    attributes:
+      label: Source type
+      options:
+        - MA Docs
+        - MA Website
+        - Discord
+        - X
+        - Podcast
+        - YouTube
+        - Spotify
+        - Other
+    validations:
+      required: false
+  - type: input
+    id: source_date
+    attributes:
+      label: Date of the source (if known)
+      placeholder: YYYY-MM-DD
+    validations:
+      required: false
+  - type: textarea
+    id: relevance
+    attributes:
+      label: Why is this relevant?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Screenshot or extra context (optional)
+      description: Crop tightly, remove unrelated messages, and redact ordinary usernames/avatars where identity isn't relevant.
+    validations:
+      required: false
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Acknowledgements
+      options:
+        - label: I have read the submission policy and my submission contains no unnecessary personal information.
+          required: true

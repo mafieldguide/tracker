@@ -1,0 +1,44 @@
+name: Correction
+description: Report something incorrect or outdated on a FAQ page
+title: "Correction: "
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Corrections need a source. Please read [the submission policy](https://github.com/mafieldguide/tracker/blob/main/SUBMISSION_POLICY.md) first. Don't post private personal information or unrelated conversations.
+  - type: input
+    id: faq_url
+    attributes:
+      label: FAQ page URL or slug
+      description: The "Suggest a correction" link on each FAQ page on mafieldguide.com fills this in for you.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: What appears incorrect or outdated?
+    validations:
+      required: true
+  - type: input
+    id: source_url
+    attributes:
+      label: Source URL
+      description: A link to the original evidence (official page, message link, episode link, etc.).
+      placeholder: https://
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Screenshot or supporting context (optional)
+      description: Crop screenshots tightly and remove unrelated messages. Redact ordinary usernames/avatars where identity isn't relevant.
+    validations:
+      required: false
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Acknowledgements
+      options:
+        - label: I have read the submission policy and my submission contains no unnecessary personal information.
+          required: true
